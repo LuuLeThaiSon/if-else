@@ -18,18 +18,28 @@
 </html>
 
 <script>
+
      function check() {
 
           let num = +document.getElementById("num").value;
 
-          if (num % 2 ==0) {
+          if (num >= 10) {
 
-               document.getElementById("text").innerHTML = "So chan"
+               if (num%2 == 0) {
+
+                    document.getElementById("text").innerHTML = num;
+
+               }    else {
+
+                    document.getElementById("text").innerHTML = "nhap lai";
+
+               }
 
           } else {
 
-               document.getElementById("text").innerHTML = "So le"
+               document.getElementById("text").innerHTML = "nhap lai";
 
           }
+
      }
 </script>
