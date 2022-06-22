@@ -15,8 +15,10 @@
 
 <script>
      function date_of_month() {
+
           let month = +document.getElementById("month").value;
-          if (month > 12 || month == 0) {
+
+          if (month > 12 || month < 1) {
                document.getElementById("text").innerHTML = "Nhap lai";
           }    else if (month == 1) {
                document.getElementById("text").innerHTML = "31 ngay";
@@ -26,4 +28,5 @@
                document.getElementById("text").innerHTML = "30 ngay";
           }
      }
+
 </script>
